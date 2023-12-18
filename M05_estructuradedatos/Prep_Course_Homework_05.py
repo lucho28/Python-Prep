@@ -7,21 +7,22 @@
 
 # In[3]:
 
-
-
+ciudades = ["Tucuman","Salta","9 de Julio","Mendoza","Cordoba"]
+print(ciudades)
+type(ciudades)
 
 # 2) Imprimir por pantalla el segundo elemento de la lista
 
 # In[4]:
 
-
+print(ciudades[1])
 
 
 # 3) Imprimir por pantalla del segundo al cuarto elemento
 
 # In[8]:
 
-
+print(ciudades[1:5])
 
 
 
@@ -29,14 +30,14 @@
 
 # In[12]:
 
-
+type(ciudades)
 
 
 
 # 5) Visualizar todos los elementos de la lista a partir del tercero de manera genérica, es decir, sin explicitar la posición del último elemento
 
 # In[14]:
-
+print(ciudades[2:])
 
 
 
@@ -45,7 +46,7 @@
 
 # In[15]:
 
-
+print(ciudades[:4])
 
     
 
@@ -54,8 +55,8 @@
 
 # In[16]:
 
-
-
+#ciudades.append("Jujuy")
+print(ciudades)
 
 
 
@@ -66,12 +67,12 @@
 
 # In[20]:
 
-
+ciudades.insert(3,"Rosario")
 
 
 
 # In[21]:
-
+print(ciudades)
 
 
 
@@ -79,7 +80,7 @@
 
 # In[22]:
 
-
+ciudades.extend(["Famailla","Leales"])
 
 
 # 10) Encontrar el índice de la ciudad que en el punto 7 agregamos duplicada. ¿Se nota alguna particularidad?
@@ -87,15 +88,16 @@
 # In[23]:
 
 
-
+print(ciudades)
 
 
 # 11) ¿Qué pasa si se busca un elemento que no existe?
 
 # In[24]:
 
-
-
+ciudades.index("Rosario")
+ciudades.index("Cerca")
+#si busco un elemento que no tiene indice me da un error
 
 
 # 12) Eliminar un elemento de la lista
@@ -103,52 +105,54 @@
 # In[25]:
 
 
-
+ciudades.remove("Jujuy")
 
 
 # 13) ¿Qué pasa si el elemento a eliminar no existe?
 
 # In[27]:
 
-
-
+ciudades.remove("Cerca")
+#tamiben si no existe me da un error
+print(ciudades)
 
 
 # 14) Extraer el úlimo elemento de la lista, guardarlo en una variable e imprimirlo
 
 # In[28]:
 
+ultimo_elemento = ciudades.pop()
 
-
-
+print(ciudades)
+print(ultimo_elemento)
 
 # 15) Mostrar la lista multiplicada por 4
 
 # In[29]:
 
-
+print(ciudades*3)
 
 
 # 16) Crear una tupla que contenga los números enteros del 1 al 20
 
 # In[32]:
 
-
+mi_tupla = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
 
 
 # 17) Imprimir desde el índice 10 al 15 de la tupla
 
 # In[35]:
 
-
+print(mi_tupla[10:15])
 
 
 # 18) Evaluar si los números 20 y 30 están dentro de la tupla
 
 # In[41]:
 
-
-
+20 in mi_tupla
+30 in mi_tupla
 
 
 # 19) Con la lista creada en el punto 1, validar la existencia del elemento 'París' y si no existe, agregarlo. Utilizar una variable e informar lo sucedido.
