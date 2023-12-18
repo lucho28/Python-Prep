@@ -170,15 +170,22 @@ for i in range(2,31):
                 break
         d+=1
     if(cont == 2):
-        print("el numero ", i , "es primo")
-        input("presione una tecla para continuar")
+        print("el numero ", i , "es primo, presione Enter para continuar")
+        input()
 
     
 
 
 # 14) Crear un ciclo while que encuentre dentro del rango de 100 a 300 el primer número divisible por 3 y además múltiplo de 6
 
+
 # In[75]:
+i=100
+while(i<=300):
+    if (i % 3 == 0 & i % 6 == 0):
+        print("El primer multipli de 3 y 6 entre 100 y 300 es: ", i)
+        break
+    i+=1
 
 
-
+# %%
