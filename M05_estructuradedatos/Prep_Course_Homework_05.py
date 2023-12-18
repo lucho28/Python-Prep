@@ -159,6 +159,10 @@ print(mi_tupla[10:15])
 
 # In[48]:
 
+if "Paris" not in ciudades:
+    ciudades.append("Paris")
+
+print(ciudades)
 
 
 
@@ -168,6 +172,7 @@ print(mi_tupla[10:15])
 # In[51]:
 
 
+print(f"La ciudad de {ciudades[5]} aparece una cantidad de: ", ciudades.count(ciudades[5]))
 
 
 
@@ -175,16 +180,17 @@ print(mi_tupla[10:15])
 
 # In[52]:
 
+tupla_ciudades = tuple(ciudades)
 
-
-
+lista_ciudades = list(tupla_ciudades)
 
 # 22) Desempaquetar solo los primeros 3 elementos de la tupla en 3 variables
 
 # In[55]:
 
+type(tupla_ciudades)
 
-
+type(lista_ciudades)
 
 
 # 23) Crear un diccionario utilizando la lista crada en el punto 1, asignandole la clave "ciudad". Agregar tambien otras claves, como puede ser "Pais" y "Continente".
